@@ -55,5 +55,7 @@ group :development do
   gem 'capistrano-rbenv', '~> 2.0.2'
 end
 
+gem 'mysql2'
+gem 'pry'
 # Use Unicorn as the app server
 gem 'unicorn'

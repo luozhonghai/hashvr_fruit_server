@@ -52,7 +52,7 @@ class Api::V1::UsersController < Lina::ApplicationController
           type: 'string',
           description: '玩家名字',
         },
-        score: {
+        classic_score: {
           type: 'string',
           description: '玩家分数'
         }
