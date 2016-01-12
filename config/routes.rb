@@ -1,9 +1,32 @@
 Rails.application.routes.draw do
-  get 'users/new'
 
-  get 'users/player_rank'
+  # namespace :api do
+  # namespace :v1 do
+  #   get 'users/new'
+  #   end
+  # end
 
-  get 'users/ranking'
+  # namespace :api do
+  # namespace :v1 do
+  #   get 'users/player_rank'
+  #   end
+  # end
+
+  # namespace :api do
+  # namespace :v1 do
+  #   get 'users/ranking'
+  #   end
+  # end
+  # :path => "", :constraints => { :subdomain => "api.fruit" } 
+  
+  namespace :api, :path => ""  do
+    namespace :v1 do
+      post 'users/new'
+      post 'users/player_rank'
+      post 'users/ranking'
+    end
+  end
+
 
   api_for '/apidoc'
   # The priority is based upon order of creation: first created -> highest priority.
